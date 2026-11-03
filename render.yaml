@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: pratyay-backend
+    runtime: python
+    rootDir: pratyay-backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DATABASE_URL
+        value: sqlite:///./pratyay.db
+      - key: PYTHON_VERSION
+        value: 3.12.0
