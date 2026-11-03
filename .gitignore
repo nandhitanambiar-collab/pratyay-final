@@ -1,0 +1,37 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Dependencies and Python environments
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Test and tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Local IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backups of previous repository metadata
+.git-backup/
